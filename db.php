@@ -1,3 +1,3 @@
 <?php
-$conexion=mysqli_connect("localhost","root","","proyecto")or die("error conexion");
+$conexion=mysqli_connect("roundhouse.proxy.rlwy.net","root","tDVFsqHnNqxUsRjDUKmWJzCfHMkhanmJ","railway")or die("error conexion");
 ?>
