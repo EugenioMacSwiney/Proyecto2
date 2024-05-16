@@ -18,7 +18,7 @@ include('db.php');
       <th scope="col">ID</th>
       <th scope="col">Nombre</th>
       <th scope="col">Usuario</th>
-      <th scope="col">Contraseña</th>
+      <th scope="col">Contrasena</th>
       <th scope="col">Acciones</th>
     </tr>
   </thead>
@@ -36,7 +36,7 @@ while($mostrar  = mysqli_fetch_array($result)){
     <td><?php echo $mostrar['ID'] ?> </td>
     <td><?php echo $mostrar['Nombre'] ?> </td>
     <td><?php echo $mostrar['Usuario'] ?> </td>
-    <td><?php echo $mostrar['Contraseña'] ?> </td>    
+    <td><?php echo $mostrar['Contrasena'] ?> </td>    
     <td>
 
 <!editar>

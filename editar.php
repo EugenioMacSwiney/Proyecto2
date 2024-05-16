@@ -38,8 +38,8 @@ include('db.php');
                         <input type="text" value="<?php echo $mostrar['Nombre'] ?>" name="txtNombre" class="form-control">
                         <p>Usuario</p>
                         <input type="text" value="<?php echo $mostrar['Usuario'] ?>" name="txtUsuario" class="form-control">
-                        <p>Contraseña</p>
-                        <input type="text" value="<?php echo $mostrar['Contraseña'] ?>" name="txtContraseña" class="form-control">
+                        <p>Contrasena</p>
+                        <input type="text" value="<?php echo $mostrar['Contrasena'] ?>" name="txtContrasena" class="form-control">
                         <input type="submit" value="ACTUALIZAR" class="btn btn-primary">
                     </form>
                 <?php

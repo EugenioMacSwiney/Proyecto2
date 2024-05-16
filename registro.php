@@ -6,10 +6,10 @@ include('db.php');
 
 $nombre=$_POST['txtNombre'];
 $usuario=$_POST['txtUsuario'];
-$contraseña=$_POST['txtContraseña'];
+$contrasena=$_POST['txtContrasena'];
 
-$consulta="INSERT INTO `usuarios` (`Nombre`, `Usuario`, `Contraseña`) 
-VALUES ('$nombre', '$usuario', '$contraseña')";
+$consulta="INSERT INTO `usuarios` (`Nombre`, `Usuario`, `Contrasena`) 
+VALUES ('$nombre', '$usuario', '$contrasena')";
 
 $resultado=mysqli_query($conexion,$consulta) or die("error de registro");
 
