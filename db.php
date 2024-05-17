@@ -1,3 +1,3 @@
 <?php
-$conexion=mysqli_connect("roundhouse.proxy.rlwy.net","root","tDVFsqHnNqxUsRjDUKmWJzCfHMkhanmJ","railway","44689")or die("error conexion");
+$conexion=mysqli_connect("roundhouse.proxy.rlwy.net","root","tDVFsqHnNqxUsRjDUKmWJzCfHMkhanmJ","railway","44689","TCP railway")or die("error conexion");
 ?>
