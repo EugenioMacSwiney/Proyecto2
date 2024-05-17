@@ -6,6 +6,6 @@ $DB_NAME=$_ENV["railway"];
 $DB_PORT=$_ENV["31415"];
 
 
-$conexion=mysqli_connect("$roundhouse.proxy.rlwy.net","$root","$YNCLLTwChFjiZWPrLnCcdcXLXuBhqQuM","$railway","$31415")or die("error conexion");
+$conexion=mysqli_connect("$DB_HOST","$DB_USER","$DB_PASSWORD","$DB_NAME","$DB_PORT")or die("error conexion");
 ?>
 <!--  -->
