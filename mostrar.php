@@ -33,18 +33,18 @@ while($mostrar  = mysqli_fetch_array($result)){
 ?>
 
     <tr>
-    <td><?php echo $mostrar['ID'] ?> </td>
+    <td><?php echo $mostrar['id'] ?> </td>
     <td><?php echo $mostrar['Nombre'] ?> </td>
     <td><?php echo $mostrar['Usuario'] ?> </td>
     <td><?php echo $mostrar['Contrasena'] ?> </td>    
     <td>
 
 <!editar>
-<a href="editar.php?id=<?php echo $mostrar['ID'] ?>">Editar</a>
+<a href="editar.php?id=<?php echo $mostrar['id'] ?>">Editar</a>
 
 <!eliminar>
     <form action="eliminar.php" method="post">
-    <input type="hidden" value="<?php echo $mostrar['ID'] ?>" name="txtID"readonly>
+    <input type="hidden" value="<?php echo $mostrar['id'] ?>" name="txtID"readonly>
         <td><input class="btn btn-danger" type="submit" value="Eliminar" name="btnEliminar"></td>
     </form>
 </td>
