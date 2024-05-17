@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include('db.php');
+include('/app/db.php');
 
 $nombre=$_POST['txtNombre'];
 $usuario=$_POST['txtUsuario'];

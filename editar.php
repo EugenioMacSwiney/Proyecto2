@@ -1,5 +1,5 @@
 <?php
-include('db.php');
+include('/app/db.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,11 +28,11 @@ include('db.php');
             <tbody>
                 <?php
                 $id = $_GET["id"];
-                $sql = "SELECT * FROM usuarios where id='" . $id . "'";
+                $sql = "SELECT * FROM usuarios where ID='" . $id . "'";
                 $result = mysqli_query($conexion, $sql);
                 while ($mostrar = mysqli_fetch_array($result)) {
                 ?>
-                    <form action="procesar_editar.php" method="POST">
+                    <form action="/procesar_editar.php" method="POST">
                         <input type="hidden" value="<?php echo $mostrar['id'] ?>" name="txtID">
                         <p>Nombre</p>
                         <input type="text" value="<?php echo $mostrar['Nombre'] ?>" name="txtNombre" class="form-control">
